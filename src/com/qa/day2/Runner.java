@@ -2,7 +2,11 @@ package com.qa.day2;
 
 public class Runner {
 	public static void main(String[] args) {
-//
+		
+/************************************
+Uncomment lines that need to be run
+************************************/		
+		
 //		System.out.println(Conditionals.hotOrCold(30));
 //		System.out.println(Conditionals.ride(30, 100));
 //
@@ -29,5 +33,6 @@ public class Runner {
 		
 //		FizzBuzz.x=30;
 //		System.out.println(FizzBuzz.execute());
+		
 	}
 }
