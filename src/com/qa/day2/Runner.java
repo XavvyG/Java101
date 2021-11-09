@@ -33,6 +33,10 @@ Uncomment lines that need to be run
 		
 //		FizzBuzz.x=30;
 //		System.out.println(FizzBuzz.execute());
+//		Iteration.forLoop(500);
 		
+//		Iteration.timesTable(7);
+		
+		Iteration.whileLoop("y");
 	}
 }
