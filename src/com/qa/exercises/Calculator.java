@@ -11,19 +11,22 @@ package com.qa.exercises;
 //Your division method may have returned the wrong result; This is called a rounding error and is quite common in most languages. this is because we were using ints rather than doubles. Modify the division method so that it takes Double parameters and then return a Double, if not already.
 
 public class Calculator {
-	public static int sum (int a, int b) {
+	public static int sum(int a, int b) {
 		int result = a + b;
 		return result;
 	}
-	public static int difference (int a, int b) {
+
+	public static int difference(int a, int b) {
 		int result = a - b;
 		return result;
 	}
-	public static int factor (int a, int b) {
+
+	public static int factor(int a, int b) {
 		int result = a * b;
 		return result;
 	}
-	public static double quotient (double a, double b) {
+
+	public static double quotient(double a, double b) {
 		double result = a / b;
 		return result;
 	}
