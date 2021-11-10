@@ -37,6 +37,9 @@ Uncomment lines that need to be run
 		
 //		Iteration.timesTable(7);
 		
-		Iteration.whileLoop("y");
+//		Iteration.realWorld();
+//		Iteration.whileLoop();
+//		Iteration.doWhileLoop();
+		
 	}
 }
