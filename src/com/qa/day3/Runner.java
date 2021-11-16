@@ -53,8 +53,11 @@ public class Runner {
 //		System.out.println(myName.substring(1, 6)); // ello 
 		
 		
-		String str = "the quick brown fox jumps over the lazy dog";
-		System.out.println(StringExercise.method1(str));
-		StringExercise.method2(str);
+		String str = "Am I in Amsterdam";
+//		System.out.println(StringExercise.method1(str));
+//		StringExercise.method2(str);
+//		StringExercise.method3(str);
+//		StringExercise.method4(str, "today");
+		StringExercise.method5(str);
 	}
 }

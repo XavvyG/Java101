@@ -1,21 +1,17 @@
-package com.qa.day5.challanges;
+package com.qa.day5.challenges;
 
 //Create a Person class modelling name, age and job title variables.
 public class Person {
-
+	
+	
+	//Encapsulation
+	//---variables
 	private String name;
 	private int age;
 	private String jobTitle;
 	
+	//Constructor: initialise variables as soon as an instance is created
 	//Create a method to return all three of these in a formatted string.
-	@Override
-	public String toString() {
-		return "Person [name=" + name + ", age=" + age + ", jobTitle=" + jobTitle + "]";
-	}
-
-	
-	
-	
 	public Person(String name, int age, String jobTitle) {
 		super();
 		this.name = name;
@@ -24,6 +20,9 @@ public class Person {
 	}
 
 
+	public Person() {
+		// TODO Auto-generated constructor stub
+	}
 
 
 	//Create some example objects with this class.
@@ -55,5 +54,13 @@ public class Person {
 	public void setJobTitle(String jobTitle) {
 		this.jobTitle = jobTitle;
 	}
+	
+	
+	//ToString Method
+	@Override
+	public String toString() {
+		return "Person [name=" + name + ", age=" + age + ", jobTitle=" + jobTitle + "]\n";
+	}
+
 	
 }

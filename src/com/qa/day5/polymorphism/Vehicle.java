@@ -28,5 +28,4 @@ public class Vehicle {
 	public String toString() {
 		return "Vehicle [colour=" + colour + ", mileage=" + mileage + ", model=" + model + ", wheels=" + wheels + "]";
 	}
-	
 }

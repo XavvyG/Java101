@@ -30,24 +30,42 @@ public class StringExercise {
 	 */
 	public static int method1(String str) {
 
-		int wordCount = 0;
+		int wordCount = 1;
 
 		for (int i = 0; i < str.length(); i++) {
 			if (str.charAt(i) == ' ') {
 				wordCount++;
 			}
 		}
-		return wordCount + 1;
+		return wordCount;
 	}
 
 	public static void method2(String str) {
-
-		int i = 0;
-		for (i = 0; i < str.length(); i++) {
-			char letter = str.charAt(i);
-			System.out.println(letter);
-
-		}
+		System.out.println(str.replace(" ", "\n"));
 	}
 
+	public static void method3(String str) {
+		String chars[] = str.split(" ");
+		if(chars.length > 0){
+            for(int i=chars.length-1;i>=0;i--){
+                System.out.print(chars[i]+"\n");
+            }
+        }
+	}
+
+	public static void method4(String message, String find) {
+		String lMessage = message.toLowerCase();
+		String lfind= find.toLowerCase();
+		
+		System.out.println(lMessage.contains(lfind));
+		
+	}
+	public static void method5(String message) {
+		
+		
+		
+	}
+	
+	
+	
 }
