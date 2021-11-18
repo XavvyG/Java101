@@ -4,24 +4,42 @@ import java.util.ArrayList;
 
 public class Garage {
 
-	public void vehicleList() {
-		ArrayList<Vehicle> vList = new ArrayList<>();
+	ArrayList<Vehicle> vehicleList = new ArrayList<>();
 
-		Vehicle a = new Vehicle("Honda", "Type-R", "black", 1999, 4);
-		Vehicle b = new Vehicle("Ducati", "Monster", "red", 2021, 2);
-		Vehicle c = new Vehicle("BMW", "3 Series", "blue", 2016, 4);
-		Vehicle d = new Vehicle("Nissan", "Almera", "silver", 2004, 4);
-
-		
-		vList.add(a);
-		vList.add(b);
-		vList.add(c);
-		vList.add(d);
-		
-		
-		for (Vehicle i : vList) {
-			System.out.println(i);
+	
+	public void removeVehicleByType(String name) {
+		for (Vehicle veh : vehicleList) {
+			if(veh.getClass().getSimpleName().equals(name)) {
+				vehicleList.remove(veh);
+			}
 		}
 	}
 	
+	public void calcAllBills() {
+		for (Vehicle veh : vehicleList) {
+			vehicleBill(veh);
+		}
+	}
+	
+	public void fixVehicle(Vehicle veh) {
+		vehicleBill(veh);
+	}
+	
+	public void add(Vehicle veh) {
+		vehicleList.add(veh);
+	}
+	
+	public void empty() {
+		vehicleList.clear();
+	}
+	
+	public void vehicleBill(Vehicle veh) {
+		if (veh instanceof Car) {
+			System.out.println("Car: Bill is £200");
+		}else if (veh instanceof Boat) {
+			System.out.println("Boat: Bill is £500");
+		}else if (veh instanceof Motorbike) {
+			System.out.println("Motobike: Bill is £100");
+		}
+	}
 }

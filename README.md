@@ -1,3 +1,3 @@
 # Java101
 
-These are my exercises from QA Bootcamp
+These are my exercises and lectures from QA Bootcamp

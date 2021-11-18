@@ -1,12 +1,17 @@
 package com.qa.day5.garage;
 
 public class Vehicle {
-
+	//Encapsulation
 	private String make; //null
 	private String model; //null
 	private String colour; //null
 	private int year; //0.0
 	private int wheels; //0
+	
+	//Create Constructors
+	public Vehicle() {
+		
+	}
 	
 	public Vehicle(String make, String model, String colour, int year, int wheels) {
 		super();
